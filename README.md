@@ -117,11 +117,13 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
+![Screenshot 2025-03-10 080708](https://github.com/user-attachments/assets/51f57909-b8f0-4757-9f3e-d072250640f5)
 
 
 grep hello newfile 
 ## OUTPUT
 
+![Screenshot 2025-03-10 080715](https://github.com/user-attachments/assets/7c9890ee-f2fd-4a94-b93b-262eafe09e09)
 
 
 
@@ -193,23 +195,10 @@ egrep -w '(H|h)ell[a-z]' newfile
 ![Screenshot 2025-03-09 111000](https://github.com/user-attachments/assets/5b171a40-6689-44c9-b8bd-2d46508f5df0)
 
 
-
-egrep '(^hello)' newfile 
-## OUTPUT
-
-
-
-
 egrep '(world$)' newfile 
 ## OUTPUT
 
-![Screenshot 2025-03-09 111011](https://github.com/user-attachments/assets/7ca5fd69-44d4-46c1-adef-f254d7110c47)
-
-
-egrep '(World$)' newfile 
-## OUTPUT
-
-![Screenshot 2025-03-09 111025](https://github.com/user-attachments/assets/04f96caf-59a8-4a03-8022-36e4d52bc222)
+![Screenshot 2025-03-10 081031](https://github.com/user-attachments/assets/fa252fcd-bea2-44a3-99d7-e957c9a0995e)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
