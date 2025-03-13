@@ -204,6 +204,7 @@ egrep '((W|w)orld$)' newfile
 ## OUTPUT
 
 
+![Screenshot 2025-03-13 092216](https://github.com/user-attachments/assets/8141aa69-b01f-4df0-a6ce-fdf644d50676)
 
 
 egrep '[1-9]' newfile 
@@ -211,23 +212,25 @@ egrep '[1-9]' newfile
 
 
 
-egrep 'Linux.*world' newfile 
-## OUTPUT
-![Screenshot 2025-03-09 110833](https://github.com/user-attachments/assets/1b150a4b-c45d-46c2-83f2-cac21ead1aa6)
+![Screenshot 2025-03-13 092526](https://github.com/user-attachments/assets/216581a0-3c06-435d-8f56-a4003164ceaf)
+
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 
+![Screenshot 2025-03-13 092554](https://github.com/user-attachments/assets/890bcd0e-3a35-485c-86bd-9fcb6340d899)
 
 egrep l{2} newfile
 ## OUTPUT
 
 
+![Screenshot 2025-03-13 092651](https://github.com/user-attachments/assets/84c833c6-9fa4-4fff-816d-4ddd2e033e6b)
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
+![Screenshot 2025-03-13 092717](https://github.com/user-attachments/assets/1bbf3162-72ef-4ca5-ba96-a40ebbe84b0d)
 
 cat > file23
 ```
@@ -247,78 +250,89 @@ sed -n -e '3p' file23
 ## OUTPUT
 
 
+![Screenshot 2025-03-13 092842](https://github.com/user-attachments/assets/612da89b-e7a6-4cfd-b4fa-d6dad771f889)
 
 sed -n -e '$p' file23
 ## OUTPUT
 
 
-
-sed  -e 's/Ram/Sita/' file23
-## OUTPUT
-
+![Screenshot 2025-03-13 093107](https://github.com/user-attachments/assets/6e5ff9ef-49dd-4de8-9783-b773da1a8a38)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
+![Screenshot 2025-03-13 093223](https://github.com/user-attachments/assets/ab55667b-ba21-4873-8d5e-441d5b083f14)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
+![Screenshot 2025-03-13 093313](https://github.com/user-attachments/assets/3d7015c7-9c1f-42a1-a681-18e80f4320e1)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
+![Screenshot 2025-03-13 093412](https://github.com/user-attachments/assets/6ec356d7-94af-4b60-b59d-5bed8fb080bf)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
 
+![Screenshot 2025-03-13 093503](https://github.com/user-attachments/assets/2a6c4f86-8be8-4413-9435-f8d466f2b37c)
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
 
+![Screenshot 2025-03-13 093600](https://github.com/user-attachments/assets/104dc2d7-320b-460e-bd81-d67de4ab80d7)
 
 seq 10 
 ## OUTPUT
 
 
+![Screenshot 2025-03-13 093618](https://github.com/user-attachments/assets/43c20bad-34bd-4148-8b14-1c2a513d8f4d)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
+![Screenshot 2025-03-13 093727](https://github.com/user-attachments/assets/42b6bdb2-ea69-4054-a705-6c08add7f17f)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
+![Screenshot 2025-03-13 093752](https://github.com/user-attachments/assets/d7690ab8-b283-41d4-9cb6-e476c06c8ae3)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
 
+![Screenshot 2025-03-13 093839](https://github.com/user-attachments/assets/f23d8df5-4ba8-42bd-93c4-a933ee5d1b0f)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
+![Screenshot 2025-03-13 093903](https://github.com/user-attachments/assets/a98eb9a8-764c-4fdc-9c45-8b074f7acda8)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
+![Screenshot 2025-03-13 093949](https://github.com/user-attachments/assets/889b8062-7323-438a-92c4-bc09b1bf24ec)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
+![Screenshot 2025-03-13 094028](https://github.com/user-attachments/assets/00ec909f-2a23-4434-aef3-dbefd107f742)
 
 
 sed -n '2,4{s/$/*/;p}' file23
 
+![Screenshot 2025-03-13 094133](https://github.com/user-attachments/assets/94d635ae-aa5a-47a4-a9e7-6c3cd3ca326e)
 
 #Sorting File content
 cat > file21
@@ -332,6 +346,7 @@ cat > file21
 sort file21
 ## OUTPUT
 
+![Screenshot 2025-03-13 094211](https://github.com/user-attachments/assets/f63fede8-8ea2-4d08-b3aa-ddfeb5ca5430)
 
 cat > file22
 ```
@@ -345,12 +360,15 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+![Screenshot 2025-03-13 094341](https://github.com/user-attachments/assets/cf0d47e8-d0f4-4740-ae2e-cb72d7b61ff4)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+ 
+![Screenshot 2025-03-13 094421](https://github.com/user-attachments/assets/9a285ebd-d68a-468a-bf3a-4fdba96107b4)
 
 cat < urllist.txt
 ```
@@ -369,10 +387,12 @@ cat urllist.txt | tr -d ' '
  ## OUTPUT
 
 
- 
+ ![Screenshot 2025-03-13 094622](https://github.com/user-attachments/assets/03abc72d-a8cd-42cd-b61b-504cb622f382)
+
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+![Screenshot 2025-03-13 094702](https://github.com/user-attachments/assets/02f75c14-7d44-4cf7-8678-dcd50f217361)
 
 
 #Backup commands
