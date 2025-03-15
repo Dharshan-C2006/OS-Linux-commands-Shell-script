@@ -425,9 +425,12 @@ gunzip backup.tar.gz
 echo '#!/bin/sh' > my-script.sh
 echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
+```
 chmod 755 my-script.sh
 ./my-script.sh
+```
 ## OUTPUT
+![Screenshot 2025-03-15 092303](https://github.com/user-attachments/assets/7d105d73-0d95-450a-a634-b5db0d369c31)
 
  
 cat << stop > herecheck.txt
@@ -441,6 +444,7 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
+![Screenshot 2025-03-15 092659](https://github.com/user-attachments/assets/f58362e3-2904-498d-92eb-13dbc14cf1d1)
 
 cat < scriptest.sh 
 ```bash
@@ -482,20 +486,15 @@ chmod 777 scriptest.sh
  
 ls file1
 ## OUTPUT
+![Screenshot 2025-03-15 094026](https://github.com/user-attachments/assets/e71a0d00-90c3-46c8-b4f7-98eafb331725)
 
 echo $?
 ## OUTPUT 
+![Screenshot 2025-03-15 094032](https://github.com/user-attachments/assets/2da68602-6eeb-49ed-afb0-5d177badc5d7)
+
 ./one
 bash: ./one: Permission denied
  
-echo $?
-## OUTPUT 
- 
-abcd
- 
-echo $?
- ## OUTPUT
-
 
  
 # mis-using string comparisons
