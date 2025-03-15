@@ -399,6 +399,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 tar -cvf backup.tar *
 ## OUTPUT
 
+![Screenshot 2025-03-15 185542](https://github.com/user-attachments/assets/fa75a424-5007-43ab-ac1d-0e7667682a03)
 
 mkdir backupdir
  
@@ -406,10 +407,12 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![Screenshot 2025-03-15 185647](https://github.com/user-attachments/assets/51b4351d-1940-49be-b9ff-8cbf32c3bddc)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![Screenshot 2025-03-15 185719](https://github.com/user-attachments/assets/91841117-f9f4-4ab2-81fb-d3df6d762738)
 
 gzip backup.tar
 
@@ -483,7 +486,8 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- 
+ ![Screenshot 2025-03-15 191441](https://github.com/user-attachments/assets/748f67e8-c2af-4e76-acbf-bba6a346fa1f)
+
 ls file1
 ## OUTPUT
 ![Screenshot 2025-03-15 094026](https://github.com/user-attachments/assets/e71a0d00-90c3-46c8-b4f7-98eafb331725)
@@ -534,6 +538,7 @@ chmod 755 strcomp.sh
 ./strcomp.sh 
 ## OUTPUT
 
+![Screenshot 2025-03-15 193146](https://github.com/user-attachments/assets/2b465baf-ebff-44b2-afdf-fd1389223e39)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -560,6 +565,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![Screenshot 2025-03-15 193702](https://github.com/user-attachments/assets/7bea9b90-6c55-403c-a248-1ec5a4032e21)
 
 # check if with file location
 cat>ifnested.sh 
@@ -608,6 +614,7 @@ fi
 ## OUTPUT
 
 
+![Screenshot 2025-03-15 193947](https://github.com/user-attachments/assets/6f3340ff-7f41-4378-a485-c9983bd7d621)
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -650,6 +657,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![Screenshot 2025-03-15 194155](https://github.com/user-attachments/assets/5f755398-84c1-44b4-99a8-74adbf79cc0e)
 
 # check if a file
 cat > ifnested.sh 
@@ -699,6 +707,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+![Screenshot 2025-03-15 193947](https://github.com/user-attachments/assets/e9af050d-a6b9-4c5b-8db2-db8cb33404fb)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -728,6 +737,7 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
+![Screenshot 2025-03-15 195459](https://github.com/user-attachments/assets/7f378622-a8a9-48c5-bcf8-63d5ff296775)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -743,6 +753,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![Screenshot 2025-03-15 195638](https://github.com/user-attachments/assets/bde9281d-73f6-4381-b35c-488cb8d1db4f)
 
 # using the case command
 cat >casecheck.sh 
@@ -762,7 +773,8 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ ![Screenshot 2025-03-15 195821](https://github.com/user-attachments/assets/85271ab1-51b9-4431-bb69-4890f5c3dfed)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -778,7 +790,8 @@ $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
  
- 
+ ![Screenshot 2025-03-15 195951](https://github.com/user-attachments/assets/a4ae99e2-aa9e-4f12-a250-806a902f41d2)
+
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -792,7 +805,8 @@ done
 $ chmod 755 untiltest.sh
  
  
- 
+ ![Screenshot 2025-03-15 200147](https://github.com/user-attachments/assets/04510f2c-2810-48e5-863c-9bdf6d12f6ba)
+
 cat forin1.sh 
 ```bash
 \#!/bin/bash
@@ -805,19 +819,9 @@ done
  
 $ chmod 755 forin1.sh
  
- 
-cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
- ```
- 
-$ chmod 755 forin2.sh
- 
+ ![Screenshot 2025-03-15 200329](https://github.com/user-attachments/assets/bce9d444-8cb2-449f-a7f2-502c2ec812d4)
+
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -830,7 +834,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+ ![Screenshot 2025-03-15 200509](https://github.com/user-attachments/assets/51b72a07-dbd3-465a-b99e-c1d500d93855)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -842,16 +847,7 @@ done
 ```
 $ ./forin3.sh 
  
-cat forin1.sh 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-$ chmod 755 forin1.sh
+![Screenshot 2025-03-15 200705](https://github.com/user-attachments/assets/e8f92813-c851-4583-bd06-9b637b5cec54)
 
 ## OUTPUT
 cat forinfile.sh 
@@ -876,6 +872,7 @@ Khammam
 
 ## OUTPUT
 
+![Screenshot 2025-03-15 200926](https://github.com/user-attachments/assets/b0408e2f-e7ae-4590-aafe-c891683dc63c)
 
 cat forctype.sh 
 ```bash
@@ -889,6 +886,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![Screenshot 2025-03-15 201107](https://github.com/user-attachments/assets/6b539ba5-0b1d-4442-922b-6ba97b8d382f)
 
 cat forctype1.sh 
 ```bash
@@ -902,6 +900,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![Screenshot 2025-03-15 201233](https://github.com/user-attachments/assets/06b374dd-9982-4017-b494-cd6cd32c8f96)
 
 cat fornested1.sh 
 ```bash
@@ -921,7 +920,8 @@ $ chmod 755 fornested1.sh
 $ ./fornested1.sh 
  ## OUTPUT
 
- 
+ ![Screenshot 2025-03-15 201411](https://github.com/user-attachments/assets/930f2fa7-74cc-497c-95e0-5d1e57e44d2d)
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -942,7 +942,7 @@ $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
  
-cat forbreak.sh 
+cat forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
