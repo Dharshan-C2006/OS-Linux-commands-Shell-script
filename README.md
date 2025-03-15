@@ -941,7 +941,8 @@ echo "The for loop is completed“
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- 
+ ![Screenshot 2025-03-15 204030](https://github.com/user-attachments/assets/e561a833-415f-4573-aac2-77d32d0b06bd)
+
 cat forcontinue.sh 
 ```bash
 #!/bin/bash
@@ -962,8 +963,9 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
-cat exread.sh 
+ ![Screenshot 2025-03-15 204505](https://github.com/user-attachments/assets/805f7d2f-a3af-48fd-8bb7-e1b826a060a8)
+
+cat exread.sh
 ```bash
 #!/bin/bash
 # testing the read command
@@ -977,6 +979,7 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 
+![Screenshot 2025-03-15 204715](https://github.com/user-attachments/assets/0945dd8a-11d5-4623-a584-33a6bed71c39)
 
  cat exread1.sh
 ```bash
@@ -989,6 +992,7 @@ $ chmod 755 exread1.sh
 
 ## OUTPUT
 
+![Screenshot 2025-03-15 204937](https://github.com/user-attachments/assets/96e7e65e-6298-4b67-a5ed-f33d85bd3fa3)
 
 
 $ ./exread1.sh 
@@ -1014,7 +1018,9 @@ fi
  
  ./funcex.sh 1 2
 
- 
+ ![Screenshot 2025-03-15 205130](https://github.com/user-attachments/assets/f6c0d989-b7a2-4441-8acd-cd3e1df9a6f8)
+![Screenshot 2025-03-15 205354](https://github.com/user-attachments/assets/0875f7d3-31d4-43c8-8757-bcdd7b8ad04a)
+
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1027,7 +1033,8 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![Screenshot 2025-03-15 205317](https://github.com/user-attachments/assets/482d2fbc-f158-4de5-97f1-ea8423dbaaaa)
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1044,20 +1051,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
-cat argshift.sh
-```bash
-#!/bin/bash 
-set -x 
-while (( "$#" )); do 
-  echo $1 
-  shift 
-done
-set +x
-```
-## OUTPUT
- ./argshift.sh 1 2 3
- 
+ ![Screenshot 2025-03-15 205624](https://github.com/user-attachments/assets/807df74f-88c9-4fb6-8d8e-8b6bb66fbd83)
  
 cat > nc.awk
 ```bash
@@ -1088,7 +1082,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Screenshot 2025-03-15 205903](https://github.com/user-attachments/assets/78b74331-43ab-4da4-a8c9-0bdee6d9c2c8)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1115,6 +1110,7 @@ else
 fi
 ```
 ## OUTPUT 
+![Screenshot 2025-03-15 210048](https://github.com/user-attachments/assets/7217ac21-ddbb-4e3e-aaa8-dd0d611b7758)
 
 
 # RESULT:
